@@ -35,7 +35,7 @@ let tab = document.querySelectorAll(".info-header-tab"),
         }
     });
     // timer
-    let deadLine = "2020-1-5";
+    let deadLine = "2020-1-10";
 function getTimeRemaining(endtime) {
     let t = Date.parse(endtime) - Date.parse(new Date());
     
@@ -56,15 +56,12 @@ function getTimeRemaining(endtime) {
         if(seconds <= 9) {
             seconds = "0" + seconds;
         }
-        
     return {
         "total" : t,
         "seconds" : seconds,
         "minutes" : minutes,
         "hours" : hours
-        
     };
-    
 }
 function setClock(id, endtime) {
     let timer = document.getElementById(id),
@@ -81,10 +78,11 @@ function setClock(id, endtime) {
     if(t.total <= 0) {
         clearInterval(timeInterval);
     }
-
     }
 };
 setClock("timer", deadLine);
 
 });
 
+// modal window
+let 
