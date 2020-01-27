@@ -27,11 +27,8 @@ class Options {
         div.style.fontSize = this.fontSize + "px";
         div.style.textAlign = this.textAlign;
         div.textContent = this.text;
-        
-        
-         }
-         
-}   
+        }
+    }   
 };
 
 let divElem = new Options("100","200","red","35", "center", "Yes"),
@@ -41,15 +38,4 @@ let divElem = new Options("100","200","red","35", "center", "Yes"),
 console.log(divElem.createElem());
 console.log(newDiv.createElem());
 console.log(newD.createElem());
-// let div = document.createElement("div");
-//     div.classList.add("box");
-//     document.body.appendChild(div);
-//     div.style.backgroundColor = "red";
-//     div.style.height = "100px";
-//     div.style.width = "100px";
-//     div.style.fontSize = "20px";
-//     div.style.textContent = "Hello world!";
-//     div.innerHTML = "<h1>Hello world</h1>";
-    
-// console.log(div);
 

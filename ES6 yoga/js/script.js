@@ -60,15 +60,16 @@ let setClock = (id, endtime) => {
 
     function updateClock() {
         let t = getTimeRemaining(endtime);
-        let addZero = (num) => {
+        function addZero(num) {
             if(num <= 9) {
                 return "0" + num;
             } else return num;
+            
         };
         
-        seconds.textContent = t.seconds;
-        minutes.textContent = t.minutes;
-        hours.textContent = t.hours;
+        seconds.textContent = addZero(t.seconds);
+        minutes.textContent = addZero(t.minutes);
+        hours.textContent = addZero(t.hours);
     if(t.total <= 0) {
         clearInterval(timeInterval);
         seconds.textContent = "00";
